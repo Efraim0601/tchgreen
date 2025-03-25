@@ -1,0 +1,291 @@
+/* Smooth scroll pour la navigation */
+html {
+    scroll-behavior: smooth;
+}
+.top-nav {
+    background-color: #333;
+    padding: 8px 0;
+}
+
+.hero-section {
+max-height: 50vh;
+overflow: hidden;
+
+}
+
+.carousel, .carousel-inner, .carousel-item {
+height: 50vh;
+}
+
+.carousel-item img {
+object-fit: cover;
+height: 100%;
+width: 100%;
+}
+
+.carousel-item::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(0, 0, 0, 0.5);
+z-index: 1;
+}
+
+.carousel-caption {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+bottom: auto;
+z-index: 2;
+}
+
+.carousel-indicators {
+z-index: 3;
+}
+
+.carousel-control-prev, .carousel-control-next {
+z-index: 3;
+}
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);}
+.product-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+.card-body {
+    padding: 1.5rem;
+}
+.realisations-section {
+    background-color: #f8f9fa;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+.footer {
+    background-color: #002B5B;
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer h4 {
+    color: #4CAF50;
+    font-size: 1.25rem;
+}
+
+.footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.footer .social-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.footer .social-link:hover {
+    color: #4CAF50;
+}
+
+.footer .border-top {
+    border-color: rgba(255,255,255,0.1)!important;
+}
+.social-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-link:hover {
+    color: #ccc;
+}
+
+.order-btn {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.order-btn:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+.search-button {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.navbar {
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .navbar-nav .nav-link {
+        position: relative;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        color: #333;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #4CAF50;
+    }
+
+    .navbar-nav .nav-link.active {
+        color: #4CAF50;
+    }
+
+    .navbar-nav .nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 1rem;
+        right: 1rem;
+        height: 2px;
+        background-color: #4CAF50;
+    }
+
+    @media (max-width: 991.98px) {
+        .navbar-nav .nav-link.active::after {
+            left: 0;
+            right: 0;
+        }
+    }
+    
+    .values-section .card {
+        transition: transform 0.3s ease;
+    }
+    
+    .values-section .card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .values-section .card-body {
+        padding: 1.5rem;
+    }
+    
+    .values-section .card-title {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    
+    .values-section .card-text {
+        color: #6c757d;
+        font-size: 0.9rem;
+    }
+
+    .history-section {
+        background-color: #f8f9fa;
+    }
+    
+    .history-section h2 {
+        color: #2c3e50;
+    }
+    
+    .history-section .lead {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    
+    .timeline-container {
+        position: relative;
+        padding: 0;
+    }
+    
+    .timeline-block {
+        position: relative;
+        padding: 2rem 0;
+    }
+    
+    .timeline-block h3 {
+        color: #4CAF50; /* Vert pour correspondre à l'identité de TCHGREEN */
+        font-size: 1.75rem;
+    }
+    
+    .timeline-block h4 {
+        font-size: 1.1rem;
+        color: #6c757d;
+    }
+    
+    .timeline-block p {
+        color: #34495e;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .timeline-image {
+        position: relative;
+        max-width: 100%;
+    }
+    
+    .timeline-image img {
+        max-height: 300px;
+        width: 100%;
+        object-fit: cover;
+        border: 3px solid #4CAF50; /* Bordure verte */
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+    
+    .timeline-image img:hover {
+        transform: scale(1.05);
+    }
+    
+    /* Alternance des blocs pour un effet visuel */
+    .timeline-block:nth-child(odd) .col-md-6:first-child {
+        order: 1;
+    }
+    
+    .timeline-block:nth-child(even) .col-md-6:first-child {
+        order: 2;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 767.98px) {
+        .timeline-block .col-md-6 {
+            order: 2 !important;
+            margin-top: 1.5rem;
+        }
+    
+        .timeline-image img {
+            max-height: 200px;
+        }
+    }

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/image/logo.png" alt="TchGreen Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">A Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historique.html">Historique</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="realistation.html">Réalisations</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero-section">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                <!-- Premier slide - Innovation -->
+                <div class="carousel-item active">
+                    <img src="assets/image/construction mur Four.jpg" class="d-block w-100" alt="Construction durable">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 mb-4">CONSTRUISONS ENSEMBLE UN AVENIR DURABLE</h1>
+                        <p class="lead mb-5">Des solutions innovantes pour répondre aux défis énergétiques de demain</p>
+                       
+                    </div>
+                </div>
+    
+                <!-- Deuxième slide - Expertise -->
+                <div class="carousel-item">
+                    <img src="assets/image/meulage four.jpg" class="d-block w-100" alt="Expertise industrielle">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 mb-4">L'EXPERTISE AU SERVICE DE L'ENVIRONNEMENT</h1>
+                        <p class="lead mb-5">Plus de 4 ans d'expérience dans la conception d'équipements thermique performants</p>
+                       
+                    </div>
+                </div>
+    
+                <!-- Troisième slide - Impact -->
+                <div class="carousel-item">
+                    <img src="assets/image/biocharbon.jpg" class="d-block w-100" alt="Biocharbon écologique">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 mb-4">UN IMPACT DURABLE POUR NOTRE COMMUNAUTÉ</h1>
+                        <p class="lead mb-5">Des solutions locales pour une transition énergétique responsable</p>
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+        </div>
+    </section>
+    
+
+     <!-- Products Section -->
+     <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Produits</h2>
+            <p class="text-center mb-5">Des solutions durables adaptées à chaque besoin</p>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card product-card h-100">
+                        <img src="assets/image/biocharbon.jpg" class="card-img-top" alt="Four électrique">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nom du produit</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card product-card h-100">
+                        <img src="assets/image/Vue de face four Par TCHGREEN.jpg" class="card-img-top" alt="Biocharbon">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nom du produit</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer professionnalisé -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h4 class="mb-3">TchGreen</h4>
+                <p>Construisons ensemble un avenir durable avec des solutions énergétiques innovantes.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4 class="mb-3">Contact</h4>
+                <p>Téléphone: +237 657 331 149<br>+237 682 536 282</p>
+                <p>Email: <a href="mailto:contact@tchgreen.com" class="social-link">contact@tchgreen.com</a></p>
+                <p>Adresse: Maroua, Extrême-Nord, Cameroun</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4 class="mb-3">Suivez-nous</h4>
+                <div>
+                    <a href="#" class="social-link">Facebook</a> |
+                    <a href="#" class="social-link">Instagram</a> |
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center pt-3 border-top">
+                <p class="mb-0">Copyright © 2024 TchGreen - Tous droits réservés</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/javascript.js"></script>
+</body>
+</html>
