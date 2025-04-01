@@ -13,6 +13,29 @@ overflow: hidden;
 
 }
 
+.history-section .timeline-block p {
+    text-align: justify;
+}
+.timeline-block {
+    position: relative;
+    padding-left: 40px; /* Espace pour la barre */
+}
+.color-bar {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 1px; /* Largeur fixe de la barre */
+    height: 100px; /* 10% de la hauteur du bloc parent */
+    border-radius: 3px 0 0 3px;
+    margin-right: 10px; /* Espace entre la barre et le texte */
+}
+.year-2020 {
+     background-color: #2ecc71; 
+    }
+.margin_Left{
+    margin-left: 20px;
+}
+
 .carousel, .carousel-inner, .carousel-item {
 height: 50vh;
 }
