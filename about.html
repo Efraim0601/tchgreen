@@ -11,6 +11,55 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Custom styles for the infographic design */
+        .infographic-section {
+            padding: 50px 0;
+        }
+        .infographic-card {
+            position: relative;
+            width: 100%;
+            max-width: 300px;
+            height: 400px;
+            border: 2px dashed #000;
+            margin: 20px auto;
+            text-align: center;
+            padding: 20px;
+        }
+        .infographic-card .label {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            padding: 10px;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 10px 10px 0 0;
+        }
+        .infographic-card .label.mission {
+            background: #28a745; /* Green for Mission */
+        }
+        .infographic-card .label.vision {
+            background: #007bff; /* Blue for Vision */
+        }
+        .infographic-card i {
+            font-size: 2.5rem;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        .infographic-card p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 767px) {
+            .infographic-card {
+                max-width: 250px;
+                height: 350px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -94,55 +143,40 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
+    <!-- Combined About, Vision, and Missions Section with Infographic Design -->
+    <section id="about-overview" class="infographic-section">
         <div class="container">
-            <div class="text-center mb-4">
-                <i class="bi bi-info-circle-fill text-primary" style="font-size: 2rem;"></i>
-                <h3 class="mt-3">A propos</h3>
-            </div>
-            <div class="row justify-content-center">
-                <p class="mb-1">Fondée il y a plus de quatre ans, TCHGREEN est une entreprise basée dans la ville de Maroua, ville située dans la région de l’Extrême-Nord du Cameroun, engagée dans la conception, la fabrication, et l’installation de solutions écologiques pour répondre aux défis thermiques et énergétiques de demain.
+            <div class="row">
+                <!-- A propos -->
+                <div class="col-md-4">
+                    <div class="infographic-card">
+                        <div class="label mission">A PROPOS</div>
+                        <i class="bi bi-info-circle-fill"></i>
+                        <p>Fondée il y a plus de quatre ans, TCHGREEN est une entreprise basée dans la ville de Maroua, engagée dans la conception, la fabrication, et l’installation de solutions écologiques pour répondre aux défis thermiques et énergétiques de demain.</p>
+                    </div>
+                </div>
 
-                    Grâce à une équipe innovante et dévouée, nous valorisons les ressources locales pour créer des produits durables : fours de pyrolyse de biomasse, four de cuisson de céramique à biomasse, four domestique à biomasse, séchoirs semi-industriels et incinérateurs solaires. Nous croyons fermement que l’humain doit être au centre de toute action durable, en tant qu’acteur principal de la préservation de l’environnement et de la transformation responsable des énergies.
-                    
-                    Notre mission est claire : conjuguer performance technologique, efficacité énergétique et respect de l’environnement au profit des ménages, des industries et des collectivités.
-                </p>
+                <!-- Notre vision -->
+                <div class="col-md-4">
+                    <div class="infographic-card">
+                        <div class="label vision">VISION</div>
+                        <i class="bi bi-eye-fill"></i>
+                        <p>Créer un impact durable dans le monde en développant des solutions écologiques accessibles à tous, et devenir un leader dans la valorisation des ressources locales.</p>
+                    </div>
+                </div>
+
+                <!-- Nos missions -->
+                <div class="col-md-4">
+                    <div class="infographic-card">
+                        <div class="label mission">MISSION</div>
+                        <i class="bi bi-bullseye"></i>
+                        <p>Placer l’humain au centre de nos solutions pour améliorer son quotidien tout en renforçant sa conscience écologique.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Vision Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <div class="text-center mb-4">
-                <i class="bi bi-eye-fill text-primary" style="font-size: 2rem;"></i>
-                <h3 class="mt-3">Notre vision</h3>
-            </div>
-            <div class="row justify-content-center">
-                <p class="mb-1">
-                    Créer un impact durable dans le monde en développant des solutions écologiques accessibles à tous, et devenir un leader dans la valorisation des ressources locales en équipements thermiques performants.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Missions Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <div class="text-center mb-4">
-                <i class="bi bi-bullseye text-primary" style="font-size: 2rem;"></i>
-                <h4 class="mt-3">Nos missions</h4>
-            </div>
-            <div class="row justify-content-center">
-                <p class="mb-1">
-                    Placer l’humain au centre de nos solutions pour améliorer son quotidien tout en renforçant sa conscience écologique. Proposer des produits innovants qui transforment les ressources naturelles locales en alternatives durables.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Values Section -->
     <section class="values-section py-5">
         <div class="container">
             <h4 class="mb-1 text-center">Nos valeurs</h4>
@@ -152,9 +186,7 @@
                     <div class="card h-100 border-0 shadow-sm">
                         <div class="card-body text-center">
                             <div class="mb-3 d-block">
-                                <!-- <i class="bi bi-leaf-fill text-success" style="font-size: 2rem;"></i> -->
                                 <i class="bi bi-tree text-success" style="font-size: 2rem;"></i>
-
                             </div>
                             <h5 class="card-title">Durabilité</h5>
                             <p class="card-text">Mettre en avant des solutions qui préservent les ressources naturelles et l'environnement.</p>
@@ -203,7 +235,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Footer professionnalisé -->
     <footer class="footer">
         <div class="container">
@@ -236,9 +268,10 @@
     </footer>
 
     <!-- Bootstrap JS and Popper.js -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/javascript.js"></script>
-    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9297abe3ac001803',t:'MTc0MzUwNjE1Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
 </body>
 </html>
+
+
+
