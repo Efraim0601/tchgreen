@@ -3,7 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A propos</title>
+    <meta name="description" content="Découvrez TchGreen, une entreprise basée à Maroua, Extrême-Nord, Cameroun, spécialisée dans le charbon écologique et les solutions énergétiques durables.">
+    <meta name="keywords" content="TchGreen, charbon écologique, charbon Maroua, charbon Extrême-Nord, énergie durable, Cameroun">
+    <meta name="author" content="TchGreen">
+    <meta name="robots" content="index, follow">
+    <title>À Propos de TchGreen - Charbon Écologique à Maroua, Extrême-Nord</title>
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="À Propos de TchGreen - Charbon Écologique à Maroua">
+    <meta property="og:description" content="TchGreen, basée à Maroua, Extrême-Nord, Cameroun, propose des solutions de charbon écologique pour un avenir durable.">
+    <meta property="og:image" content="assets/image/biocharbon.jpg">
+    <meta property="og:url" content="https://tchgreen.org/about.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="À Propos de TchGreen - Charbon Écologique à Maroua">
+    <meta name="twitter:description" content="TchGreen, basée à Maroua, Extrême-Nord, Cameroun, propose des solutions de charbon écologique pour un avenir durable.">
+    <meta name="twitter:image" content="assets/image/biocharbon.jpg">
+
+    <!-- Hreflang for Language and Region -->
+    <link rel="alternate" hreflang="fr-cm" href="https://tchgreen.org/about.html">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
@@ -60,218 +80,246 @@
             }
         }
     </style>
+
+    <!-- Schema Markup for Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "TchGreen",
+      "url": "https://tchgreen.org",
+      "logo": "https://tchgreen.org/assets/image/logo.png",
+      "description": "TchGreen est une entreprise basée à Maroua, Extrême-Nord, Cameroun, spécialisée dans le charbon écologique et les solutions énergétiques durables.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Maroua",
+        "addressRegion": "Extrême-Nord",
+        "addressCountry": "CM"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+237 657 331 149",
+        "contactType": "customer service"
+      },
+      "sameAs": [
+        "https://facebook.com/tchgreen",
+        "https://instagram.com/tchgreen",
+        "https://twitter.com/tchgreen"
+      ]
+    }
+    </script>
 </head>
-<body>
+    <body>
 
-    <!-- Main Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/image/logo.png" alt="TchGreen Logo" height="50">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">A Propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="historique.html">Historique</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="product.html">Produits</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="realistation.html">Réalisations</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section with Carousel -->
-    <section class="hero-section">
-        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-            </div>
-            
-            <div class="carousel-inner">
-                <!-- Premier slide - Innovation -->
-                <div class="carousel-item active">
-                    <img src="assets/image/construction mur Four.jpg" class="d-block w-100" alt="Construction durable">
-                    <div class="carousel-caption">
-                        <h1 class="display-4 mb-1">CONSTRUISONS ENSEMBLE UN AVENIR DURABLE</h1>
-                        <p class="lead mb-5">Des solutions innovantes pour répondre aux défis énergétiques de demain</p>
-                    </div>
-                </div>
-    
-                <!-- Deuxième slide - Expertise -->
-                <div class="carousel-item">
-                    <img src="assets/image/meulage four.jpg" class="d-block w-100" alt="Expertise industrielle">
-                    <div class="carousel-caption">
-                        <h1 class="display-4 mb-1">L'EXPERTISE AU SERVICE DE L'ENVIRONNEMENT</h1>
-                        <p class="lead mb-5">Plus de 4 ans d'expérience dans la conception d'équipements thermique performants</p>
-                    </div>
-                </div>
-    
-                <!-- Troisième slide - Impact -->
-                <div class="carousel-item">
-                    <img src="assets/image/biocharbon.jpg" class="d-block w-100" alt="charbon écologique écologique">
-                    <div class="carousel-caption">
-                        <h1 class="display-4 mb-1">UN IMPACT DURABLE POUR NOTRE COMMUNAUTÉ</h1>
-                        <p class="lead mb-5">Des solutions locales pour une transition énergétique responsable</p>
-                    </div>
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/image/logo.png" alt="TchGreen Logo - Charbon Écologique Maroua" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">À Propos de TchGreen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="historique.html">Historique de TchGreen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Produits - Charbon Écologique</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="realistation.html">Réalisations TchGreen</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-    
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Précédent</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Suivant</span>
-            </button>
-        </div>
-    </section>
+        </nav>
 
-    <!-- Combined About, Vision, and Missions Section with Infographic Design -->
-    <section id="about-overview" class="infographic-section">
-        <div class="container">
-            <div class="row">
-                <!-- A propos -->
-                <div class="col-md-4">
-                    <div class="infographic-card">
-                        <div class="label mission">A PROPOS</div>
-                        <i class="bi bi-info-circle-fill"></i>
-                        <p>Fondée il y a plus de quatre ans, TCHGREEN est une entreprise basée dans la ville de Maroua, engagée dans la conception, la fabrication, et l’installation de solutions écologiques pour répondre aux défis thermiques et énergétiques de demain.</p>
-                    </div>
+        <!-- Hero Section with Carousel -->
+        <section class="hero-section">
+            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
                 </div>
-
-                <!-- Notre vision -->
-                <div class="col-md-4">
-                    <div class="infographic-card">
-                        <div class="label vision">VISION</div>
-                        <i class="bi bi-eye-fill"></i>
-                        <p>Créer un impact durable dans le monde en développant des solutions écologiques accessibles à tous, et devenir un leader dans la valorisation des ressources locales.</p>
+                
+                <div class="carousel-inner">
+                    <!-- Premier slide - Innovation -->
+                    <div class="carousel-item active">
+                        <img src="assets/image/construction mur Four.jpg" class="d-block w-100" alt="Construction durable avec TchGreen à Maroua">
+                        <div class="carousel-caption">
+                            <h1 class="display-4 mb-1">CONSTRUISONS ENSEMBLE UN AVENIR DURABLE</h1>
+                            <p class="lead mb-5">Des solutions innovantes de charbon écologique pour répondre aux défis énergétiques à Maroua, Extrême-Nord.</p>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Nos missions -->
-                <div class="col-md-4">
-                    <div class="infographic-card">
-                        <div class="label mission">MISSION</div>
-                        <i class="bi bi-bullseye"></i>
-                        <p>Placer l’humain au centre de nos solutions pour améliorer son quotidien tout en renforçant sa conscience écologique.</p>
+        
+                    <!-- Deuxième slide - Expertise -->
+                    <div class="carousel-item">
+                        <img src="assets/image/meulage four.jpg" class="d-block w-100" alt="Expertise TchGreen dans les équipements thermiques">
+                        <div class="carousel-caption">
+                            <h1 class="display-4 mb-1">L'EXPERTISE AU SERVICE DE L'ENVIRONNEMENT</h1>
+                            <p class="lead mb-5">Plus de 4 ans d'expérience dans la conception d'équipements thermiques performants à Maroua.</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="values-section py-5">
-        <div class="container">
-            <h4 class="mb-1 text-center">Nos valeurs</h4>
-            <div class="row g-4">
-                <!-- Durabilité -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <div class="mb-3 d-block">
-                                <i class="bi bi-tree text-success" style="font-size: 2rem;"></i>
-                            </div>
-                            <h5 class="card-title">Durabilité</h5>
-                            <p class="card-text">Mettre en avant des solutions qui préservent les ressources naturelles et l'environnement.</p>
+        
+                    <!-- Troisième slide - Impact -->
+                    <div class="carousel-item">
+                        <img src="assets/image/biocharbon.jpg" class="d-block w-100" alt="Charbon écologique TchGreen à Maroua, Extrême-Nord">
+                        <div class="carousel-caption">
+                            <h1 class="display-4 mb-1">UN IMPACT DURABLE POUR NOTRE COMMUNAUTÉ</h1>
+                            <p class="lead mb-5">Charbon écologique TchGreen : des solutions locales pour une transition énergétique responsable au Cameroun.</p>
                         </div>
                     </div>
                 </div>
-    
-                <!-- Innovation continue -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <div class="mb-3">
-                                <i class="bi bi-lightbulb-fill text-warning" style="font-size: 2rem;"></i>
-                            </div>
-                            <h5 class="card-title">Innovation continue</h5>
-                            <p class="card-text">Réfléchir et créer chaque jour pour dépasser les attentes de nos clients.</p>
+        
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Combined About, Vision, and Missions Section with Infographic Design -->
+        <section id="about-overview" class="infographic-section">
+            <div class="container">
+                <h1 class="text-center mb-5">À Propos de TchGreen - Charbon Écologique à Maroua</h1>
+                <div class="row">
+                    <!-- A propos -->
+                    <div class="col-md-4">
+                        <div class="infographic-card">
+                            <div class="label mission">À PROPOS</div>
+                            <i class="bi bi-info-circle-fill"></i>
+                            <p>Fondée il y a plus de quatre ans, TchGreen est une entreprise basée à Maroua, Extrême-Nord, Cameroun, engagée dans la conception, la fabrication, et l’installation de solutions de charbon écologique pour répondre aux défis thermiques et énergétiques de demain.</p>
                         </div>
                     </div>
-                </div>
-    
-                <!-- Engagement social -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <div class="mb-3">
-                                <i class="bi bi-people-fill text-primary" style="font-size: 2rem;"></i>
-                            </div>
-                            <h5 class="card-title">Engagement social</h5>
-                            <p class="card-text">Former, sensibiliser, et collaborer avec les communautés locales pour une économie plus verte.</p>
+
+                    <!-- Notre vision -->
+                    <div class="col-md-4">
+                        <div class="infographic-card">
+                            <div class="label vision">VISION</div>
+                            <i class="bi bi-eye-fill"></i>
+                            <p>Créer un impact durable dans le monde en développant des solutions de charbon écologique accessibles à tous à Maroua, et devenir un leader dans la valorisation des ressources locales dans l'Extrême-Nord.</p>
                         </div>
                     </div>
-                </div>
-    
-                <!-- Transformation locale -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <div class="mb-3">
-                                <i class="bi bi-recycle text-success" style="font-size: 2rem;"></i>
-                            </div>
-                            <h5 class="card-title">Transformation locale</h5>
-                            <p class="card-text">Utiliser les richesses locales de manière responsable pour des produits performants et durables.</p>
+
+                    <!-- Nos missions -->
+                    <div class="col-md-4">
+                        <div class="infographic-card">
+                            <div class="label mission">MISSION</div>
+                            <i class="bi bi-bullseye"></i>
+                            <p>Placer l’humain au centre de nos solutions de charbon écologique pour améliorer son quotidien à Maroua tout en renforçant sa conscience écologique dans l'Extrême-Nord.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Footer professionnalisé -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <h4 class="mb-3">TchGreen</h4>
-                    <p>Construisons ensemble un avenir durable avec des solutions énergétiques innovantes.</p>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h4 class="mb-3">Contact</h4>
-                    <p>Téléphone: +237 657 331 149<br>+237 682 536 282</p>
-                    <p>Email: <a href="/cdn-cgi/l/email-protection#2c4f4342584d4f586c584f444b5e494942024f4341" class="social-link"><span class="__cf_email__" data-cfemail="4d2e2223392c2e390d392e252a3f282823632e2220">[email protected]</span></a></p>
-                    <p>Adresse: Maroua, Extrême-Nord, Cameroun</p>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h4 class="mb-3">Suivez-nous</h4>
-                    <div>
-                        <a href="#" class="social-link">Facebook</a> |
-                        <a href="#" class="social-link">Instagram</a> |
-                        <a href="#" class="social-link">Twitter</a>
+        </section>
+
+        <section class="values-section py-5">
+            <div class="container">
+                <h2 class="mb-1 text-center">Nos Valeurs - TchGreen Maroua</h2>
+                <div class="row g-4">
+                    <!-- Durabilité -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <div class="mb-3 d-block">
+                                    <i class="bi bi-tree text-success" style="font-size: 2rem;"></i>
+                                </div>
+                                <h5 class="card-title">Durabilité</h5>
+                                <p class="card-text">Mettre en avant des solutions de charbon écologique qui préservent les ressources naturelles et l'environnement à Maroua, Extrême-Nord.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Innovation continue -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <div class="mb-3">
+                                    <i class="bi bi-lightbulb-fill text-warning" style="font-size: 2rem;"></i>
+                                </div>
+                                <h5 class="card-title">Innovation Continue</h5>
+                                <p class="card-text">Réfléchir et créer chaque jour pour dépasser les attentes de nos clients avec des solutions énergétiques durables à Maroua.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Engagement social -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <div class="mb-3">
+                                    <i class="bi bi-people-fill text-primary" style="font-size: 2rem;"></i>
+                                </div>
+                                <h5 class="card-title">Engagement Social</h5>
+                                <p class="card-text">Former, sensibiliser, et collaborer avec les communautés locales de l'Extrême-Nord pour une économie plus verte grâce au charbon écologique.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Transformation locale -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <div class="mb-3">
+                                    <i class="bi bi-recycle text-success" style="font-size: 2rem;"></i>
+                                </div>
+                                <h5 class="card-title">Transformation Locale</h5>
+                                <p class="card-text">Utiliser les richesses locales de Maroua de manière responsable pour produire du charbon écologique performant et durable.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 text-center pt-3 border-top">
-                    <p class="mb-0">Copyright © 2024 TchGreen - Tous droits réservés</p>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <h4 class="mb-3">TchGreen</h4>
+                        <p>Construisons ensemble un avenir durable avec du charbon écologique à Maroua, Extrême-Nord, Cameroun.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h4 class="mb-3">Contact</h4>
+                        <p>Téléphone: +237 657 331 149<br>+237 682 536 282</p>
+                        <p>Email: <a href="/cdn-cgi/l/email-protection#2c4f4342584d4f586c584f444b5e494942024f4341" class="social-link"><span class="__cf_email__" data-cfemail="4d2e2223392c2e390d392e252a3f282823632e2220">[email protected]</span></a></p>
+                        <p>Adresse: Maroua, Extrême-Nord, Cameroun</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h4 class="mb-3">Suivez-nous</h4>
+                        <div>
+                            <a href="#" class="social-link">Facebook</a> |
+                            <a href="#" class="social-link">Instagram</a> |
+                            <a href="#" class="social-link">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center pt-3 border-top">
+                        <p class="mb-0">Copyright © 2024 TchGreen - Tous droits réservés</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/javascript.js"></script>
-</body>
+        <!-- Bootstrap JS and Popper.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/javascript.js"></script>
+        <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'92a79ba26b5bbfc0',t:'MTc0MzY3MzI2Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+    </body>
 </html>
-
-
-
+<!-- End of HTML Document -->
